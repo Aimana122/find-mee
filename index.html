@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт со статьями</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('fon1.jpg');
+            background-size: cover; /* Растягивает изображение на весь экран */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* Фиксирует фон при прокрутке */">
+    <!-- Меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FAKE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Выпадающее меню "Статьи" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Identity Check, Scammer?!
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="personA.html">Persona A</a></li>
+                            <li><a class="dropdown-item" href="personB.html">Persona B</a></li>
+                            <li><a class="dropdown-item" href="personC.html">Persona C</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Статьи -->
+    <div class="container mt-5">
+        <h1 class="article-text">Identity Check, Scammer?!</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="1.JPG" class="card-img-top" alt="Статья 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Persona A</h5>
+                        <p class="card-text">The Enigma of Pieter Mouthaan: Real Innovator or Fabricated Persona?</p>
+                        <a href="personA.html" class="btn btn-primary">View more…</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="5.JPG" class="card-img-top" alt="Статья 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Persona B</h5>
+                        <p class="card-text">“Why This Person is a Fake: An Investigation Based on Data and Photos”</p>
+                        <a href="personB.html" class="btn btn-primary">View more…</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="9.JPG" class="card-img-top" alt="Статья 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Persona C</h5>
+                        <p class="card-text">Several individuals named Kenneth Dean are associated with the Washington, D.C. area:</p>
+                        <a href="personC.html" class="btn btn-primary">View more…</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
